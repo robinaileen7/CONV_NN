@@ -1,7 +1,0 @@
-Update on 2/19/24:
-I tried the same algorithm on simulated GBM data, to see if CNN would identify positive-returned scenarios in a span of one year. The input for each scenario is a N-by-N matrix of return data on different frequencies acrossing its rows. <br />
-
-I'm doing this personal project to take a chance to learn Convolutional Neural Network (CNN) in PyTorch. Thanks for all the amazing tutorials online; those are more helpful than I thought! <br />
-I collected largest food and tech companies' stock data from Yahoo Finance and compute their time-serial returns on different frequencies (e.g. from daily return all the way to yearly return). To have a good understandng of how the data looks like, there are options to use matplotlib's imshow to read data as images. Starting from there, I use torch.nn to build a neural network to learn about those image/data features, and then apply linear transformation to the final output into the size of classification I want. <br />
-On top of those, for each batch of my training data, I use Adam algorithm to update parameters on each step, and then use the best parameters to compute test sample accruracy. <br />
-As for now, I have tried classification on stock sectors and stock performaces. There are a lot more for me to keep polishing such as how to convert the stock returns into something CNN can better initialize, and how to achieve higher accruacy by improving optimization methods.
